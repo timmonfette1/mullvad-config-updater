@@ -10,3 +10,6 @@ The script is simple and adds the following support to all of the config files f
 - Modifies the DNS line in the config to guard against DNS leaking (additional settings may need to be tweaked on your specific browser).
 
 The script can simply be run by an account with `sudo` access to update every config file for: `./mullvad-config-updater.sh`.
+
+## Warning
+Make sure to only run this once.  Running the script more than once will end up duplicating lines inside the WireGuard config files.
